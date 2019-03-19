@@ -28,13 +28,13 @@ for k in range(1, m+1):
     print('enter number: ')
     z = int(input())
     y.append(z)
-
 print('Array : ')
 print(y)
 print('Min Value : ')
 print(min(y))
-print('Min Value Index: ')
-print(y.index(min(y)))
+indices = [i for i, m in enumerate(y) if m == min(y)]
+print('Min Values Index: ')
+print(indices)
 
 
 
