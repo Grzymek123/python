@@ -10,15 +10,17 @@ print(z)
 
 
 print('Insert your value here:')
-x = int(input())
-silnia=1
-if x>0:
-    for i in range(1, x+1):
-        silnia=silnia* i
-elif x<0:
-    print("Nie można policzyć silni dla ujemnej wartości")
-
-print("silnia=",silnia)
+try:
+    x = int(input())
+    silnia = 1;
+    if x > 0:
+        for i in range(1, x + 1):
+            silnia = silnia * i
+        print("silnia=", silnia)
+    else:
+        print("Nie można policzyć silni dla ujemnej wartości")
+except ValueError:
+    print("Wpisz liczbę!")
 
 
 print('put the length of array: ')
